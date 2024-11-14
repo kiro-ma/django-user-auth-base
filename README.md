@@ -13,24 +13,23 @@ Requisitos
     Python 3.13 ou superior
     Django 4.x ou superior
 
-Como Instalar
+# Como Instalar
 
-    Clone este repositório:
+Clone este repositório:
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+    git clone https://github.com/kiro-ma/django-user-auth-base.git
 
-    Instale as dependências:
+Instale as dependências:
 
 Certifique-se de que você está utilizando um ambiente virtual (recomendado). Se ainda não tiver um, crie um ambiente virtual:
 
-python3 -m venv venv
+    python3 -m venv venv
 
 Ative o ambiente virtual:
 
-    No Windows:
+No Windows:
 
-.\venv\Scripts\activate
+    .\venv\Scripts\activate
 
 No macOS/Linux:
 
@@ -38,36 +37,30 @@ No macOS/Linux:
 
 Após ativar o ambiente virtual, instale as dependências listadas no requirements.txt:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
-    Instale o Django:
+Instale o Django:
 
 Caso não tenha o Django instalado, você pode instalar diretamente com o comando:
 
-pip install django
+    pip install django
 
 Ou, se preferir, pode consultar a documentação oficial do Django para mais detalhes sobre a instalação.
-Como Usar
+    
+    https://docs.djangoproject.com/en/5.1/
 
-    Configuração inicial do Django:
+# Configuração inicial do Django:
 
 No diretório do projeto, execute o comando abaixo para realizar a migração do banco de dados:
 
 python manage.py migrate
 
-    Criar um superusuário (admin):
+Criar um superusuário (admin):
 
-Para acessar o painel administrativo do Django, crie um superusuário:
-
-python manage.py createsuperuser
-
-    Iniciar o servidor de desenvolvimento:
-
-Execute o comando abaixo para rodar o servidor local:
-
-python manage.py runserver
+    python manage.py createsuperuser
 
 Acesse o painel administrativo em http://127.0.0.1:8000/admin/ e a API de autenticação em http://127.0.0.1:8000/auth/.
-Contribuição
+
+# Contribuição
 
 Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades! Se você tiver sugestões, basta abrir uma issue ou enviar um pull request.
